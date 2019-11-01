@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-4-25 11:16:58 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.drsn.flights.bean.FlightBean" table="flight">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="flightId" type="java.lang.String" unique="true">
+            <column name="FLIGHTID" />
+        </property>
+        <property name="iataIdent" type="java.lang.String">
+            <column name="IATAIDENT" />
+        </property>
+        <property name="ident" type="java.lang.String">
+            <column name="IDENT" />
+        </property>
+        <property name="friendlyIdent" type="java.lang.String">
+            <column name="FRIENDLYIDENT" />
+        </property>
+        <property name="airlineIcao" type="java.lang.String">
+            <column name="AIRLINEICAO" />
+        </property>
+        <property name="flighType" type="java.lang.String">
+            <column name="FLIGHTYPE" />
+        </property>
+        <property name="flighTypeFriendlyType" type="java.lang.String">
+            <column name="FLIGHTYPEFRIENDLYTYPE" />
+        </property>
+        <property name="origin" type="java.lang.String">
+            <column name="ORIGIN" />
+        </property>
+        <property name="destination" type="java.lang.String">
+            <column name="DESTINATION" />
+        </property>
+        <property name="takeoffTimesActual" type="java.lang.Integer">
+            <column name="TAKEOFFTIMESACTUAL" />
+        </property>
+        <property name="landingTimesActual" type="java.lang.Integer">
+            <column name="LANDINGTIMESACTUAL" />
+        </property>
+        <property name="takeoffTimesScheduled" type="java.lang.Integer">
+            <column name="TAKEOFFTIMESSCHEDULED" />
+        </property>
+        <property name="landingTimesScheduled" type="java.lang.Integer">
+            <column name="LANDINGTIMESSCHEDULED" />
+        </property>
+        <property name="gateDepartureTimesActual" type="java.lang.Integer">
+            <column name="GATEDEPARTURETIMESACTUAL" />
+        </property>
+        <property name="gateArrivalTimesActual" type="java.lang.Integer">
+            <column name="GATEARRIVALTIMESACTUAL" />
+        </property>
+        <property name="gateDepartureTimesScheduled" type="java.lang.Integer">
+            <column name="GATEDEPARTURETIMESSCHEDULED" />
+        </property>
+        <property name="gateArrivalTimesScheduled" type="java.lang.Integer">
+            <column name="GATEARRIVALTIMESSCHEDULED" />
+        </property>
+        <property name="averageDelaysDeparture" type="java.lang.Integer">
+            <column name="AVERAGEDELAYSDEPARTURE" />
+        </property>
+        <property name="averageDelaysArrival" type="java.lang.Integer">
+            <column name="AVERAGEDELAYSARRIVAL" />
+        </property>
+        <property name="distanceActual" type="java.lang.Integer">
+            <column name="DISTANCEACTUAL" />
+        </property>
+        <property name="directDistance" type="java.lang.Integer">
+            <column name="DIRECTDISTANCE" />
+        </property>
+        <property name="speed" type="java.lang.Integer">
+            <column name="SPEED" />
+        </property>
+        <property name="altitude" type="java.lang.Integer">
+            <column name="ALTITUDE" />
+        </property>
+        <property name="fuelBurnGallons" type="java.lang.Integer">
+            <column name="FUELBURNGALLONS" />
+        </property>
+        <property name="fuelBurnPounds" type="java.lang.Integer">
+            <column name="FUELBURNPOUNDS" />
+        </property>
+        <property name="cancelled" type="boolean">
+            <column name="CANCELLED" />
+        </property>
+    </class>
+</hibernate-mapping>

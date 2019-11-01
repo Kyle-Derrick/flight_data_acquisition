@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-4 13:34:57 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.drsn.flights.bean.ProxyBean" table="proxy">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="ip" type="java.lang.String">
+            <column name="IP" />
+        </property>
+        <property name="port" type="java.lang.Integer">
+            <column name="PORT" />
+        </property>
+    </class>
+</hibernate-mapping>

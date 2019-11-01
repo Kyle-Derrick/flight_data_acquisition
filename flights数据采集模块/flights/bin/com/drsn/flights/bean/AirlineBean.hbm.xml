@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-4-25 11:16:58 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.drsn.flights.bean.AirlineBean" table="airline">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="fullName" type="java.lang.String">
+            <column name="FULLNAME" />
+        </property>
+        <property name="shortName" type="java.lang.String">
+            <column name="SHORTNAME" />
+        </property>
+        <property name="icao" type="java.lang.String" unique="true">
+            <column name="ICAO" />
+        </property>
+        <property name="iata" type="java.lang.String">
+            <column name="IATA" />
+        </property>
+        <property name="callsign" type="java.lang.String">
+            <column name="CALLSIGN" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="URL" />
+        </property>
+    </class>
+</hibernate-mapping>

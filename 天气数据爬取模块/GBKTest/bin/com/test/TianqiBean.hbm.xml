@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-7-24 11:51:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.test.TianqiBean" table="tianqi">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="city" type="java.lang.String">
+            <column name="city" />
+        </property>
+        <property name="date" type="java.lang.Integer">
+            <column name="date" />
+        </property>
+        <property name="tianqiDay" type="java.lang.String">
+            <column name="tianqiDay" />
+        </property>
+        <property name="tianqiNight" type="java.lang.String">
+            <column name="tianqiNight" />
+        </property>
+        <property name="wenduDay" type="java.lang.String">
+            <column name="wenduDay" />
+        </property>
+        <property name="wenduNight" type="java.lang.String">
+            <column name="wenduNight" />
+        </property>
+        <property name="fengxiangDay" type="java.lang.String">
+            <column name="fengxiangDay" />
+        </property>
+        <property name="fengxiangNight" type="java.lang.String">
+            <column name="fengxiangNight" />
+        </property>
+    </class>
+</hibernate-mapping>
